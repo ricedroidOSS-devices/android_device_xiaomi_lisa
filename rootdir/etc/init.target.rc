@@ -202,6 +202,10 @@ on early-boot
     write /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/fs_ready 1
     chmod 0202 /sys/devices/platform/soc/b0000000.qcom,cnss-qca6490/data_stall
 
+    # Dolby
+    mkdir /data/vendor/dolby 0770 media media
+    mkdir /data/vendor/multimedia 0775 system system
+
 on boot
     chown system system /sys/class/thermal/thermal_message/sconfig
     chown system system /sys/class/thermal/thermal_message/balance_mode

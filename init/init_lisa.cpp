@@ -120,4 +120,7 @@ void vendor_load_properties() {
 
     property_override("ro.build.description", description.c_str());
     property_override("ro.product.mod_device", mod_device.c_str());
+
+    property_override("ro.rice.chipset", "Snapdragon 778G");
+    property_override("ro.rice.maintainer", "Mezaque Silver (M3zaque)");
 }

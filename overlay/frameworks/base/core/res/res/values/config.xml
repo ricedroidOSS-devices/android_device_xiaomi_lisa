@@ -827,15 +827,15 @@
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
     <array name="config_sfps_sensor_props" translatable="false">
-        <item>@array/config_sfps_sensor_props_0</item>
+         <item>@array/sfps_sensor_props</item>
     </array>
-    
-    <array name="config_sfps_sensor_props_0" translatable="false">
-        <item>local:4630946480857061762</item> <!--item>displayId</item-->
-        <item>1080</item> <!--item>sensorLocationX</item-->
-        <item>960</item> <!--item>sensorLocationY</item-->
-        <item>200</item> <!--item>sensorRadius</item-->
-    </array>
+
+    <string-array name="sfps_sensor_props" translatable="false">
+        <item></item>     <!-- displayId -->
+        <item>1080</item> <!-- sensorLocationX -->
+        <item>960</item>  <!-- sensorLocationY -->
+        <item>200</item>  <!-- sensorRadius -->
+    </string-array>
     
     <!-- Whether UI for multi user should be shown -->
     <bool name="config_enableMultiUserUI">true</bool>
